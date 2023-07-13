@@ -9,23 +9,76 @@ align-items: flex-start;
 height: 100vh;
 flex-wrap: wrap;
 gap: 20px;
+margin-top: 300px;
 }
 div img {
 border-radius: 30px;
 width:500px
 }
-.parent > div:nth-child(2) img{
-    flex-shrink: 3;
-    border: 1px solid green;
+
+.material-symbols-outlined{
+    width: 60px;
 }
-.header {
-    
-    padding: 10px;
-    background: blue;
-    color: white;
+.nav{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
     position: fixed;
-    bottom: 0;
+    width: 100%;
+    top: 0px;
+    background:rgb(209, 153, 163);
+
 }
+.sticky{
+    margin-top: 400px;
+
+    position: sticky;
+    top: 45px;
+    width: 400px;
+    height: 200px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:pink;
+    font-size:24px;
+
+
+}
+.relative{
+    
+    width:700px;
+    height:200px;
+    display:flex;
+    /* justify-content:center; */
+    align-items:center;
+    background:pink;
+    font-size:24px;
+    margin-left:950px;
+
+}
+.relative >div{
+    border:1px solid green;
+    position:relative;
+left: 80px;
+
+}
+.absolute{
+    width:700px;
+    height:200px;
+    display:flex;
+    /* justify-content:center; */
+    align-items:center;
+    background:pink;
+    font-size:24px;
+    margin-left:80px;
+}
+.absolute >div{
+    border:1px solid green;
+    position:absolute;
+left: 20px;
+
+}
+
 
 @media only screen and (max-width: 767px) {
     /* CSS rules specific to mobile phones */
