@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.parent{
+display: flex;
+justify-content: center;
+align-items: flex-start;
+height: 100vh;
+flex-wrap: wrap;
+gap: 20px;
+}
+div img {
+border-radius: 30px;
+width:500px
+}
+.parent > div:nth-child(2) img{
+    flex-shrink: 3;
+    border: 1px solid green;
+}
+.header {
+    
+    padding: 10px;
+    background: blue;
+    color: white;
+    position: fixed;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    /* CSS rules specific to mobile phones */
+    .parent{
+        flex-direction: column;
+    }
+  }
+  
